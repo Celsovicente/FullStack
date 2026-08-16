@@ -1,6 +1,5 @@
 let palavra = prompt("Digite uma palavra: ");
 let palindroma = true;
-palavra.toLowerCase();
 
 for(let i = 0; i < palavra.length / 2; i++){
     if(palavra[i] != palavra[palavra.length-i-1]){

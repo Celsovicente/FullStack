@@ -26,7 +26,7 @@ switch(opcao){
         }
         resultado = num / num2;
         document.body.innerHTML = `
-        <h2> O quoiente entre ${num} e ${num2} é = ${resultado} </h2>`
+        <h2> O quociente entre ${num} e ${num2} é = ${resultado} </h2>`
         break;
     case "%":
         resultado = num % num2;

@@ -31,6 +31,13 @@ header{
     gap: 2rem;
 }
 
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    list-style: none;
+}
+
 .btn{
     padding: 8px 10px;
     background-color: blueviolet;
@@ -47,7 +54,6 @@ header{
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    transform: perspective(#0F172A);
 }
 
 .navbar a{
@@ -94,8 +100,8 @@ h2{
 .botoes{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
-    margin-left: 350px;
     margin-bottom: 10px;
 }
 
@@ -214,9 +220,10 @@ h2{
     gap: 12px;
     display: flex;
     margin-bottom: 12px;
+    justify-content: center;
 }
 
-.footer-container img{
+.footer-content img{
     width: 20px;
 }
 
@@ -309,28 +316,16 @@ hr{
 }
 
 .divisao{
-    display: flex;
-    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    margin: 10px;
     margin-left: 50px;
+    margin-right: 50px;
 }
  
-.divisao .divisao2 .divisao3 img{
+.divisao img{
     width: 100%;
-}
-
-.divisao2{
-    display: flex;
-    margin: 10px;
-    gap: 10px;
-    margin-left: 50px;
-}
-
-.divisao3{
-    display: flex;
-    gap: 10px;
-    margin: 10px;
-    margin-left: 50px;
 }
 
 .grid3{
@@ -347,3 +342,5 @@ hr{
     color: green;
     margin-left: 50px;
 }
+
+/* Media Screen */

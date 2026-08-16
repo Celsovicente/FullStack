@@ -2,7 +2,7 @@ const user = "Celso Vicente";
 const senha = 1234;
 
 let userName = prompt("Digite o nome do usúario: ");
-let pass = prompt("Digite a password: ");
+let pass = parseInt(prompt("Digite a password: "));
 
 if(user == userName && senha == pass){
     document.body.innerHTML = 

@@ -14,7 +14,7 @@ let idade = parseInt(prompt("Digite a sua idade: "));
             <h2>Adolescente</h2>
         `   
     }
-    if(idade >= 18 && idade <= 59)
+    else if(idade >= 18 && idade <= 59)
     {
         document.body.innerHTML =
         `   
