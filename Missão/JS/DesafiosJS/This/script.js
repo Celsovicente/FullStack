@@ -27,9 +27,11 @@ const meusProjetos = [
 ];
 
 
-const [ firstNome, firstDescription, firstLink ] = meusProjetos
-const [ secondtName, secondDescription, secondLink ] = meusProjetos
-const [ thirdtName, thirdDescription, thirdLink ] = meusProjetos
+const [ 
+    { nome: firstNome, descricao: firstDescription, link: firstLink },
+    { nome: secondtName, descricao: secondDescription, link: secondLink },
+    { nome: thirdtName, descriacao: thirdDescription, link: thirdLink } 
+] = meusProjetos
 
 console.log(firstNome, firstDescription, firstLink);
 console.log(secondtName, secondDescription, secondLink);
