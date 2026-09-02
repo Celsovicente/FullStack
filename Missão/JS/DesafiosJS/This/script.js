@@ -26,8 +26,6 @@ const meusProjetos = [
     }
 ];
 
-const  { nome } = meusProjetos
-console.log(nome);
 
 const [ firstNome, firstDescription, firstLink ] = meusProjetos
 const [ secondtName, secondDescription, secondLink ] = meusProjetos
