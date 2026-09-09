@@ -16,7 +16,6 @@ const meusProjetos = [
         descricao: "Uma lista que permite adicionar tarefas feito com HTML, CSS e JS",
         link: "https://github.com/Celsovicente/TudoList",
         tecnologia: "HTML, CSS e JavaScript"
-
     },
     {
         nome: "Gestão de Consultório Médico",
@@ -25,7 +24,6 @@ const meusProjetos = [
         tecnologia: "Java"
     }
 ];
-
 
 const [ 
     { nome: firstNome, descricao: firstDescription, link: firstLink },
@@ -37,3 +35,23 @@ console.log(firstNome, firstDescription, firstLink);
 console.log(secondtName, secondDescription, secondLink);
 console.log(thirdtName, thirdDescription, thirdLink);
 
+    for(let i = 0; i < meusProjetos.length; i++){
+        const projeto = document.createElement("div");
+        const titulo = document.createElement("h2");
+        const p = document.createElement("p");
+        const link = document.createElement("a");
+        const tec = document.createElement("li");
+
+        titulo.textContent = meusProjetos[i].nome
+        p.textContent = meusProjetos[i].descricao
+        link.textContent = meusProjetos[i].link
+        link.href = meusProjetos[i].link
+        tec.textContent = meusProjetos[i].tecnologia
+
+        projeto.appendChild(titulo);
+        projeto.appendChild(p);
+        projeto.appendChild(link);
+        projeto.appendChild(tec);
+
+        document.body.appendChild(projeto)
+    }
