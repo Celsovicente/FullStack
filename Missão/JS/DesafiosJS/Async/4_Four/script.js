@@ -1,9 +1,6 @@
-const promessa = new Promise((resolve, reject) =>{
-    setTimeout(() =>{
-        resolve("Resultado apresentado com Sucesso");
-    }, 1000)
-})
+const objeto =  { firstName: "Celso", seconthName : "Segunda", lastName: "Vicente", age: "22" } 
+const pessoa = JSON.stringify(objeto)
 
-promessa.then((resultado) =>{
-    console.log(resultado);
-})
+console.log(pessoa);
+
+

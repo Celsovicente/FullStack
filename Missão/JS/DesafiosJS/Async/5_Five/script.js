@@ -1,9 +1,8 @@
-const promessa = new Promise((resolve , reject) =>{
-    setTimeout(() => {
-        reject("Recusando a Promise");
-    }, 2000);
-});
+const objeto =  '{ "firstName": "Celso", "seconthName": "Segunda", "lastName": "Vicente", "age": "22" } '
+const pessoa = JSON.parse(objeto)
 
-promessa.catch((r) =>{
-    console.log(r);
-})
+console.log(pessoa.firstName);
+console.log(pessoa.seconthName);
+console.log(pessoa.lastName);
+console.log(pessoa.age);
+

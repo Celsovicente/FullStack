@@ -1,24 +1,7 @@
-const sucesso = true;
+async function executar(){
+    const dados = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+    const resposta = await dados.json();
+    console.log(resposta);
+}
 
-const promessa = new Promise((resolve, reject) =>{
-    if(sucesso == true)
-    {
-        setTimeout(() =>{
-            resolve("Resolvendo");
-        }, 1000)
-    }
-    else
-    {
-        setTimeout(() => {
-            reject("Recusando a mesma");
-        }, 2000)
-    }
-
-});
-
-promessa.then((resultado) => {
-    console.log(resultado)
-})
-.catch((result) => { 
-    console.log(result)
-})
+executar();

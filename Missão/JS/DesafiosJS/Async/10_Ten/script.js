@@ -1,26 +1,33 @@
-const sucesso = false
+const botao = document.querySelector("#buscar");
+const status = document.querySelector("#status");
+const resultado = document.querySelector("#resultado")
 
-const promessa = new Promise((resolve , reject) =>{
-    setTimeout(() =>{
-        if(sucesso)
-        {
-            const dados = {
-                id: 1, 
-                nome: "Celso", 
-                idade: 22, 
-                estadoCivil: "Solteiro"
-            }
-            resolve(dados)   
-        }
-        else {
-            reject("Dados errados");
-        }
+async function executar() {
+    status.textContent = "Caregando ....";
+    resultado.textContent = "";
+
+    try {
         
-    }, 3000)
-})
+        const resposta = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+        
+        if(!resposta.ok){
+            throw new Error("Erro ao buscar os dados!");
+        }
 
-promessa.then((resulado) =>{
-    console.log(resulado);
-})
-.catch((erro) => console.log(erro))
-.finally(() => console.log("Tobeta Bango"))
+        const dados = await dados.json();
+
+        resultado.textContent = 
+        `
+            ID: ${dados.id} <br/> 
+            Título: ${dados.title} <br/> 
+            Conteúdo: ${dados.body} <br/> 
+        `
+
+
+    } catch (error) {
+        status.textContent = "Não foi possível carregar os dados.";
+        console.log(error)
+    }
+}
+
+botao.addEventListener("click", executar)

@@ -1,9 +1,10 @@
-function executarDepois(callBack){
-    setTimeout(() =>{
-        callBack();
-    }, 1000)
+async function executar(){
+    return new Promise((resolve, reject) =>{
+        setTimeout(() =>{
+            resolve("Promise reslvida");
+        }, 1000);
+    })
 }
 
-executarDepois(function(){
-    console.log("After 1 minute"); 
-})
+executar()
+.then((resultado) => console.log(resultado))

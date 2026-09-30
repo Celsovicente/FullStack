@@ -1,0 +1,26 @@
+[
+  {
+    "nome": "Sistema de Gestão Escolar",
+    "descricao": "Sistema para gestão de alunos, professores e informações escolares.",
+    "tecnologias": ["Java"],
+    "link": "https://github.com/Celsovicente/GestaoEscolar"
+  },
+  {
+    "nome": "Projeto Biológico",
+    "descricao": "Projeto desenvolvido para trabalhar conceitos de programação aplicados à área biológica.",
+    "tecnologias": ["C"],
+    "link": "https://github.com/Celsovicente/ProjetoBiologico"
+  },
+  {
+    "nome": "ToDo List",
+    "descricao": "Aplicação para criar, visualizar e remover tarefas.",
+    "tecnologias": ["HTML", "CSS", "JavaScript"],
+    "link": "https://github.com/Celsovicente/TudoList"
+  },
+  {
+    "nome": "Gestão de Consultório Médico",
+    "descricao": "Sistema para gestão de pacientes, consultas e informações de um consultório médico.",
+    "tecnologias": ["Java"],
+    "link": "https://github.com/Celsovicente/GestaoConsultorioMedico"
+  }
+]

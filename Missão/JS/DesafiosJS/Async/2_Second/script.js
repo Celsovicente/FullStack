@@ -1,14 +1,10 @@
-function primeira(callBack){
-    setTimeout(() =>{
-        console.log("Primeira Operação realizada"); 
-        callBack();
-    }, 3000);
+async function executa(){
+    return new Promise((resolve, reject) => {
+        setTimeout(() =>{
+            resolve("Depois de 2 segundos");
+        }, 2000)
+    })
 }
 
-function segunda(){
-    console.log("Segunda Operação Realizada")
-}
-
-primeira(() => {
-    segunda();
-})
+executa()
+.then((resolve) => console.log(resolve))

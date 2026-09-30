@@ -1,12 +1,11 @@
-function promessa(callBack){
-    setTimeout(() =>{
-        const dados = [
-            "HTML", "CSS", "JS", "PHP"
-        ]
-        callBack(dados);
-    }, 3000)
+const texto = document.querySelector("#texto")
+
+async function executar(){
+    const dados = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+    const resposta = await dados.json();
+    const aux = JSON.stringify(resposta)
+    console.log(aux);
+    texto.textContent = aux    
 }
 
-promessa((dados) =>{ 
-    console.log(dados);
-})
+executar();

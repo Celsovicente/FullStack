@@ -1,20 +1,15 @@
-const projetos = [
-    "TodoList",
-    "Sistema de Gestão",
-    "Sistema de Parquamento",
-    "Sistema de Irrigação as Escolas"
-]
+const texto = document.querySelector("#texto")
 
-function carregarProjetos(){
-    return new Promise((resolve, reject) =>{
-        setTimeout(() =>{
-            resolve(projetos)
-        }, 3000)
-    })
+async function executar(){
+    const dados = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+    const resposta = await dados.json();
+    try{
+        const aux = JSON.stringify(resposta)
+        console.log(aux);
+        texto.textContent = aux    
+    }catch(error){
+        console.log("Erro dectetado!")
+    }
 }
 
-console.log("Carregando os projetos");
-carregarProjetos()
-.then((resultado) => console.log(resultado))
-.catch((erro) => console.log(erro))
-.finally(()=> console.log("Precessou"))
+executar().catch((erro) => console.log(erro))
