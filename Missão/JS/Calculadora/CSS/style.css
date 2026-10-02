@@ -1,0 +1,61 @@
+*{
+    font-family: 'Roboto', Times, serif;
+    background: linear-gradient(135deg, #74ABE2, #B6C6FF);
+}
+
+.container{
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    margin: 0 auto;
+    background-color: #F1F3F6;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.botoes{
+    text-align: center;
+    border-radius: 3px;
+    flex: 1;
+    gap:3rem;
+    margin: 1px;
+}
+
+#texto{
+    padding: 1.5rem;
+    width: 245px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #fff;
+}
+
+.first-line{
+    border-radius: 3px;
+    flex: 1;
+    gap: 3rem;
+    justify-content: space-between;
+    margin: 1px;
+}
+
+button{
+    padding: 25px;
+    margin: 1px;
+    background-color: #FFFFFF;
+}
+
+.especial{
+    background: linear-gradient(135deg, #4A90E2, #357ABD);
+    color: #FFFFFF;
+}
+
+.operador{
+    background: linear-gradient(135deg, #FF9A44, #FC6076);
+    color: #FFFFFF;
+}
+
+#igual{
+    flex: 1;
+    width: 130px;
+    color: #FFFFFF;
+}
+
