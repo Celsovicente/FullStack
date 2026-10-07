@@ -1,0 +1,40 @@
+*{
+    font-family:  "Times New Roman", Verdana, sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    width: 500px;
+    height: 400px;
+}
+
+h2{
+    margin-top: 50px;
+    color: rgb(97, 97, 217);
+    text-align: center;
+}
+
+label{
+    margin-left: 20px;
+}
+
+.resultado input[type="text"]{
+    margin: 0.5px;
+}
+
+input[type="text"]{
+    padding: 0.3rem;
+    margin: 10px;
+}
+
+select{
+    padding: 0.5rem;
+    background:  #3A7BD5;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin: 10px;
+}
